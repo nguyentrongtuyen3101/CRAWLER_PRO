@@ -1,0 +1,24 @@
+{
+  "name": "web-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "jobs": "node src/index-jobs.js",
+    "tests": "node src/runForgotPassword.js",
+    "prisma:generate": "prisma generate --schema=./prisma/schema/schema.prisma",
+    "prisma:push": "prisma db push --schema=./prisma/schema/schema.prisma"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.19.1",
+    "cuid": "^3.0.0",
+    "dotenv": "^17.2.3",
+    "prisma": "^6.19.1",
+    "puppeteer": "^24.34.0"
+  }
+}
